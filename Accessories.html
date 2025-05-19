@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories - Apple (IN)</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        /* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    color: #1d1d1f;
+    background-color: #fff;
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+}
+
+a {
+    text-decoration: none;
+    color: #06c;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 22px;
+}
+
+/* Header Navigation */
+.global-nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: saturate(180%) blur(20px);
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 44px;
+}
+
+.nav-item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    color: #f5f5f7;
+    opacity: 0.8;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 0 8px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: opacity 0.3s;
+}
+
+.nav-link:hover {
+    opacity: 1;
+}
+
+.apple-logo img, .search-icon img, .bag-icon img {
+    height: 18px;
+    width: auto;
+}
+
+/* Accessories Header */
+.accessories-header {
+    border-bottom: 1px solid #d2d2d7;
+    padding: 16px 0;
+}
+
+.accessories-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accessories-header h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.browse-all {
+    font-size: 14px;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    font-size: 21px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.hero-link {
+    font-size: 17px;
+    display: inline-block;
+}
+
+.hero-image {
+    flex: 1.5;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Search Section */
+.search-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.search-container {
+    max-width: 680px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px 40px 12px 15px;
+    border: 1px solid #d2d2d7;
+    border-radius: 8px;
+    font-size: 17px;
+    outline: none;
+}
+
+.search-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-button img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+}
+
+/* Browse Tabs */
+.browse-section {
+    padding: 20px 0 80px;
+}
+
+.browse-tabs {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #d2d2d7;
+    margin-bottom: 50px;
+}
+
+.tab-button {
+    background: none;
+    border: none;
+    padding: 16px 30px;
+    font-size: 17px;
+    cursor: pointer;
+    position: relative;
+    color: #1d1d1f;
+    opacity: 0.8;
+}
+
+.tab-button.active {
+    opacity: 1;
+}
+
+.tab-button.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #1d1d1f;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Category Grid */
+.category-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.category-item {
+    text-align: center;
+    color: #1d1d1f;
+    width: 140px;
+    transition: transform 0.3s;
+}
+
+.category-item:hover {
+    transform: scale(1.05);
+}
+
+.category-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #f5f5f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+}
+
+.category-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.category-name {
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.show-more-container {
+    text-align: center;
+}
+
+.show-more-button {
+    background: none;
+    border: none;
+    color: #06c;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+/* Footer */
+.global-footer {
+    background-color: #f5f5f7;
+    padding: 40px 0;
+    font-size: 12px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.footer-column {
+    width: 20%;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-column h3 {
+    font-size: 12px;
+    margin-bottom: 15px;
+    color: #6e6e73;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #424245;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    padding-top: 20px;
+    border-top: 1px solid #d2d2d7;
+    color: #6e6e73;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.footer-links li {
+    margin-right: 20px;
+}
+
+.footer-links li a {
+    color: #424245;
+}
+
+.india {
+    margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1068px) {
+    .hero-title {
+        font-size: 40px;
+    }
+    
+    .hero-text {
+        font-size: 19px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 734px) {
+    .nav-list {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding: 0 16px;
+    }
+    
+    .hero-container {
+        flex-direction: column;
+    }
+    
+    .hero-content {
+        padding-right: 0;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    
+    .hero-title {
+        font-size: 32px;
+    }
+    
+    .hero-text {
+        font-size: 17px;
+    }
+    
+    .section-title {
+        font-size: 24px;
+    }
+    
+    .footer-column {
+        width: 100%;
+    }
+}
+    </style>
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="global-nav">
+        <nav class="nav-container">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html" class="nav-link apple-logo"><img src="images/apple-logo.svg" alt="Apple"></a></li>
+                <li class="nav-item"><a href="store.html" class="nav-link">Store</a></li>
+                <li class="nav-item"><a href="mac.html" class="nav-link">Mac</a></li>
+                <li class="nav-item"><a href="ipad.html" class="nav-link">iPad</a></li>
+                <li class="nav-item"><a href="iphone.html" class="nav-link">iPhone</a></li>
+                <li class="nav-item"><a href="watch.html" class="nav-link">Watch</a></li>
+                <li class="nav-item"><a href="airpods.html" class="nav-link">AirPods</a></li>
+                <li class="nav-item"><a href="tv-home.html" class="nav-link">TV & Home</a></li>
+                <li class="nav-item"><a href="entertainment.html" class="nav-link">Entertainment</a></li>
+                <li class="nav-item"><a href="accessories.html" class="nav-link">Accessories</a></li>
+                <li class="nav-item"><a href="suport.html" class="nav-link">Support</a></li>
+                <li class="nav-item"><a href="#" class="nav-link search-icon"><img src="images/search-icon.svg" alt="Search"></a></li>
+                <li class="nav-item"><a href="bag.html" class="nav-link bag-icon"><img src="images/bag-icon.svg" alt="Bag"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Accessories Header -->
+    <div class="accessories-header">
+        <div class="container">
+            <h1>Accessories</h1>
+            <a href="#" class="browse-all">Browse all &gt;</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h2 class="hero-title">Accessorise in<br>a snap.</h2>
+                <p class="hero-text">Find a MagSafe case, wallet or<br>charger that's right for you.</p>
+                <a href="#" class="hero-link">Shop MagSafe &gt;</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/home.png" alt="MagSafe accessories with colorful iPhone cases">
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <h2 class="section-title">Find the accessories you're looking for.</h2>
+            <div class="search-container">
+                <input type="text" placeholder="Search accessories" class="search-input">
+                <button class="search-button"><img src="images/search-icon.svg" alt="Search"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Browse Tabs -->
+    <section class="browse-section">
+        <div class="container">
+            <div class="browse-tabs">
+                <button class="tab-button active" data-tab="product">Browse by Product</button>
+                <button class="tab-button" data-tab="category">Browse by Category</button>
+            </div>
+
+            <!-- Product Categories -->
+            <div class="tab-content active" id="product-tab">
+                <div class="category-grid">
+                    <a href="mac-accessories.html" class="category-item">
+                        <div class="category-icon">
+                            <img src="images/mac-icon.svg" alt="Mac">
+                        </div>
+                        <p class="category-name">Mac</p>
+                    </a>
+                    <a href="ipad-accessories.html" class="category-item">
+                        <div class="category-icon">
+                            <img src="images/ipad-icon.svg" alt="iPad">
+                        </div>
+                        <p class="category-name">iPad</p>
+                    </a>
+                    <a href="iphone-accessories.html" class="category-item">
+                        <div class="category-icon">
+                            <img src="images/iphone-icon.svg" alt="iPhone">
+                        </div>
+                        <p class="category-name">iPhone</p>
+                    </a>
+                    <a href="watch-accessories.html" class="category-item">
+                        <div class="category-icon">
+                            <img src="images/watch-icon.svg" alt="Watch">
+                        </div>
+                        <p class="category-name">Watch</p>
+                    </a>
+                    <a href="tv-home-accessories.html" class="category-item">
+                        <div class="category-icon">
+                            <img src="images/tv-icon.svg" alt="TV & Home">
+                        </div>
+                        <p class="category-name">TV & Home</p>
+                    </a>
+                </div>
+                <div class="show-more-container">
+                    <button class="show-more-button">Show more &gt;</button>
+                </div>
+            </div>
+
+            <!-- Category Tab Content -->
+            <div class="tab-content" id="category-tab">
+                <div class="category-grid">
+                    <a href="cases-protection.html" class="category-item">
+                        <div class="category-icon">
+                            <img src="images/case-phone-case-svgrepo-com.svg" alt="Cases & Protection">
+                        </div>
+                        <p class="category-name">Cases & Protection</p>
+                    </a>
+                    <a href="chargers.html" class="category-item">
+                        <div class="category-icon">
+                            <img src="images/charger-svgrepo-com.svg" alt="Chargers">
+                        </div>
+                        <p class="category-name">Chargers</p>
+                    </a>
+                    <a href="headphones.html" class="category-item">
+                        <div class="category-icon">
+                            <img src="images/headphones-round-svgrepo-com.svg" alt="Headphones">
+                        </div>
+                        <p class="category-name">Headphones</p>
+                    </a>
+                    <a href="keyboards.html" class="category-item">
+                        <div class="category-icon">
+                            <img src="images/keyboard-svgrepo-com.svg" alt="Keyboards">
+                        </div>
+                        <p class="category-name">Keyboards</p>
+                    </a>
+                    <a href="storage.html" class="category-item">
+                        <div class="category-icon">
+                            <img src="images/storage-drive-plug-usb-svgrepo-com.svg" alt="Storage">
+                        </div>
+                        <p class="category-name">Storage</p>
+                    </a>
+                </div>
+                <div class="show-more-container">
+                    <button class="show-more-button">Show more &gt;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="global-footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>Shop and Learn</h3>
+                    <ul>
+                        <li><a href="#">Store</a></li>
+                        <li><a href="#">Mac</a></li>
+                        <li><a href="#">iPad</a></li>
+                        <li><a href="#">iPhone</a></li>
+                        <li><a href="#">Watch</a></li>
+                        <li><a href="#">AirPods</a></li>
+                        <li><a href="#">TV & Home</a></li>
+                        <li><a href="#">Entertainment</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Apple Music</a></li>
+                        <li><a href="#">Apple TV+</a></li>
+                        <li><a href="#">Apple Arcade</a></li>
+                        <li><a href="#">iCloud</a></li>
+                        <li><a href="#">Apple One</a></li>
+                        <li><a href="#">Apple Books</a></li>
+                        <li><a href="#">Apple Podcasts</a></li>
+                        <li><a href="#">App Store</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Apple Store</h3>
+                    <ul>
+                        <li><a href="#">Find a Store</a></li>
+                        <li><a href="#">Genius Bar</a></li>
+                        <li><a href="#">Today at Apple</a></li>
+                        <li><a href="#">Apple Camp</a></li>
+                        <li><a href="#">Shopping Help</a></li>
+                        <li><a href="#">Order Status</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>For Business</h3>
+                    <ul>
+                        <li><a href="#">Apple and Business</a></li>
+                        <li><a href="#">Shop for Business</a></li>
+                    </ul>
+                    <h3>For Education</h3>
+                    <ul>
+                        <li><a href="#">Apple and Education</a></li>
+                        <li><a href="#">Shop for Education</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>About Apple</h3>
+                    <ul>
+                        <li><a href="#">Newsroom</a></li>
+                        <li><a href="#">Apple Leadership</a></li>
+                        <li><a href="#">Career Opportunities</a></li>
+                        <li><a href="#">Investors</a></li>
+                        <li><a href="#">Ethics & Compliance</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Contact Apple</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © 2025 Apple Inc. All rights reserved.</p>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Sales Policy</a></li>
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="#">Site Map</a></li>
+                </ul>
+                <p class="india">India</p>
+            </div>
+        </div>
+    </footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    // Tab switching functionality
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const tabContents = document.querySelectorAll('.tab-content');
+    
+    tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Remove active class from all buttons and contents
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            tabContents.forEach(content => content.classList.remove('active'));
+            
+            // Add active class to clicked button
+            button.classList.add('active');
+            
+            // Show corresponding content
+            const tabId = button.getAttribute('data-tab');
+            document.getElementById(`${tabId}-tab`).classList.add('active');
+        });
+    });
+    
+    // Show more button functionality
+    const showMoreButtons = document.querySelectorAll('.show-more-button');
+    
+    showMoreButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // This would typically load more categories
+            alert('This would load more categories in a real implementation');
+        });
+    });
+    
+    // Search functionality
+    const searchInput = document.querySelector('.search-input');
+    const searchButton = document.querySelector('.search-button');
+    
+    searchButton.addEventListener('click', () => {
+        performSearch();
+    });
+    
+    searchInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            performSearch();
+        }
+    });
+    
+    function performSearch() {
+        const searchTerm = searchInput.value.trim();
+        if (searchTerm) {
+            alert(`Searching for: ${searchTerm}`);
+            // In a real implementation, this would redirect to search results
+        }
+    }
+});
+</script>
+    <script src="script.js"></script>
+</body>
+</html>
