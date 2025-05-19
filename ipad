@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iPad - Apple</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top Navigation -->
+   
+   
+    <nav class="top-nav">
+      <header class="header">
+        <div class="logo-container">
+         <img src="C:\Users\hp\OneDrive\Pictures\Camera Roll\apple img.png" alt="Apple Logo" class="logo">
+        </div>
+       </header>
+    <ul>
+      <li>Store</li>
+      <li>Mac</li>
+      <li>iPad</li>
+      <li>iPhone</li>
+      <li>Watch</li>
+      <li>AirPods</li>
+      <li>Accessories</li>
+      <li>Support</li>
+    </ul>
+      
+     </nav>
+   
+
+  <!-- Info Banner -->
+  <div class="info-banner">
+    Get 3% Daily Cash back with Apple Card. And pay for your new iPad over 12 months, interest‑free.
+  </div>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="text-left">
+      <h1>iPad</h1>
+    </div>
+    <div class="text-right">
+      <p>Touch, draw, and type<br>on one magical device.</p>
+    </div>
+    <div class="hero-images">
+      <img src="C:\Users\hp\Downloads\welcome_hero_endframe_x745091b11_large_2x.jpg" alt="ipad image"  width="100%" height="1000vh">
+    </div>
+  </header>
+
+
+  <section class="know-ipad">
+  <h2>Get to know iPad.</h2>
+  <div class="ipad-cards">
+    <div class="ipad-card">
+      <img src="C:\Users\hp\OneDrive\Pictures\Camera Roll\apple inteligence.jpg" width="100%" height="300" >
+      <h3>Apple Intelligence</h3>
+      <p>Personal, private, powerful.</p>
+    </div>
+    <div class="ipad-card">
+      <img src="C:\Users\hp\OneDrive\Pictures\Camera Roll\productivity.jpg" width="1000" height="300">
+      <h3>Productivity</h3>
+      <p>Your workplace can be any place.</p>
+    </div>
+    <div class="ipad-card">
+      <img src="C:\Users\hp\OneDrive\Pictures\Camera Roll\creativity.jpg"width="1000" height="300" >
+      <h3>Creativity</h3>
+      <p>Take your inner artist out and about.</p>
+    </div>
+    <div class="ipad-card">
+      <img src="C:\Users\hp\OneDrive\Pictures\Camera Roll\learning.jpg" width="100%" height="300">
+      <h3>Learning</h3>
+      <p>Your classroom can be anywhere.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="lineup">
+  <h2>Explore the lineup</h2>
+  <div class="lineup-grid">
+    <div class="lineup-card">
+      <img src="C:\Users\hp\OneDrive\Pictures\Camera Roll\ipad pro.jpg" width="700" height="350" >
+      <h3>iPad Pro</h3>
+      <p>12.9″ or 11″</p>
+      <p>M2 chip</p>
+      
+    </div>
+    <div class="lineup-card">
+      <img src="C:\Users\hp\OneDrive\Pictures\Camera Roll\ipad air.jpg" width="700" height="350">
+      <h3>iPad Air</h3>
+      <p>10.9″ display</p>
+      <p>M1 chip</p>
+      
+    </div>
+    <div class="lineup-card">
+      <img src="C:\Users\hp\OneDrive\Pictures\Camera Roll\ipad.jpg" width="700" height="350" >
+      <h3>iPad</h3>
+      <p>10.9″ display</p>
+      <p>A14 chip</p>
+      
+    </div>
+    <div class="lineup-card">
+      <img src="C:\Users\hp\OneDrive\Pictures\Camera Roll\ipad mini.jpg" width="700" height="350">
+      <h3>iPad mini</h3>
+      <p>8.3″ display</p>
+      <p>A15 chip</p>
+      
+    </div>
+  </div>
+</section>
+
+
+<section class="essentials">
+  <h2>iPad essentials.</h2>
+  <div class="essentials-grid">
+    <div class="essential-card">
+      <h3>Apple Pencil</h3>
+      <p>Dream it up. Jot it down.</p>
+      
+      <img src="C:\Users\hp\OneDrive\Pictures\Camera Roll\apple pencil.jpg" width="700" height="300">
+      
+    </div>
+    <div class="essential-card">
+      <img src="C:\Users\hp\OneDrive\Pictures\Camera Roll\kayboard.jpg" width="900" height="350">
+      <h3>Keyboards for iPad</h3>
+      <p>Type it out. Take it with you.</p>
+      
+    </div>
+  </div>
+</section>
+
+
+<section class="why-apple">
+  <h2>Why Apple is the best place to buy iPad.</h2>
+  <div class="apple-benefits">
+    <div class="benefit-card">
+      <h3>Pay over time, interest-free.</h3>
+      <p>When you choose to check out with Apple Card Monthly Installments.</p>
+    </div>
+    <div class="benefit-card">
+      <h3>Save up to $710 with Apple Trade In.</h3>
+      <p>Get credit towards your next iPad when you trade in an eligible device.</p>
+    </div>
+    <div class="benefit-card">
+      <h3>Get flexible delivery and easy pickup.</h3>
+      <p>Choose two-hour delivery from an Apple Store, free delivery or easy pickup options.</p>
+    </div>
+    <div class="benefit-card">
+      <h3>Personalize for free.</h3>
+      <p>Engrave your iPad with emoji, names, and more — free of charge.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="significant-others">
+  <h2>Significant others.</h2>
+  <div class="device-pairing">
+    <div class="text">
+      <h1>iPad and iPhone</h1>
+      <p>
+        iPad is perfect for taking the content you capture on iPhone and bringing it to life on an immersive canvas.
+        You can shoot videos and photos on your iPhone and use the large display of your iPad to edit, add animations,
+        and more. You can also pick up wherever you left off with Handoff.
+      </p>
+    </div>
+    <div class="images">
+      <img src="C:\Users\hp\OneDrive\Pictures\Camera Roll\iphone.jpg" alt="iPhone image" width="500" height="350">
+      <h2>iphone</h2>
+      <img src="C:\Users\hp\OneDrive\Pictures\Camera Roll\ipad.jpg" alt="iPad image" width="1000" height="450">
+      <h2>ipad</h2>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-container">
+    <p> @ 2025 Apple Inc. All rights reserved.</p>
+    <ul class="footer-links">
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Use</a></li>
+      <li><a href="#">Sales Policy</a></li>
+      <li><a href="#">Legal</a></li>
+      <li><a href="#">Contact Apple</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>
