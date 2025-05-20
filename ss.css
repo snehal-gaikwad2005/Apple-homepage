@@ -1,0 +1,246 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #d6d6db;
+  color: #1d1d1f;
+  padding-top: 60px; /* Add padding to account for fixed navbar */
+}
+
+/* Navbar */
+.navbar {
+  background-color: white;
+  color: #1d1d1f;
+  position: fixed; /* Keeps the navbar fixed at the top */
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 10px 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center; /* Centers the navigation links */
+  align-items: center;
+}
+
+.nav-links {
+  color: black;
+  list-style: none;
+  display: flex; /* Ensures links are horizontal */
+  align-items: center;
+  gap: 15px; /* Spacing between navigation items */
+}
+
+.nav-links img {
+  height: 20px;
+  width: auto;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.nav-links li a:hover {
+  color: #ccc;
+}
+
+/* Mobile menu button (hidden by default, not affected by this change) */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Center the video */
+video {
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Product sections */
+.watch,
+.mac,
+.Airpods,
+.macandipad {
+  text-align: center;
+  padding: 30px 15px;
+}
+
+.watch img,
+.mac img,
+.airpods img,
+.macandipad img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Footer */
+.footer {
+  background-color: #f5f5f7;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  color: #141212;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1 1 200px; /* Allows columns to grow and shrink, with a base of 200px */
+  margin: 10px; /* Reduced margin for better spacing on smaller screens */
+  min-width: 150px; /* Minimum width for each column */
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column p {
+  /* Changed li to p as per your HTML */
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #141212;
+}
+
+.footer > p {
+  /* Styling for the copyright notice */
+  text-align: center;
+  margin-top: 30px;
+  font-size: 12px;
+  color: #666;
+}
+
+/* Responsive Media Queries */
+@media only screen and (max-width: 768px) {
+  body {
+    padding-top: 50px;
+  }
+
+  /* Mobile navbar */
+  .navbar {
+    left: 0;
+    padding: 10px 15px;
+    width: 420px;
+  }
+
+  /* Keep nav-links horizontal even on smaller screens */
+  .nav-links {
+    flex-direction: row; /* Ensure links stay horizontal */
+    justify-content: center; /* Center them */
+    align-items: center;
+    gap: 5px; /* Adjust gap for smaller screens if needed */
+    padding: 0; /* Remove vertical padding */
+  }
+
+  .nav-links img {
+    margin-right: 0;
+    margin-bottom: 0; /* Remove bottom margin */
+  }
+
+  /* Hero section adjustments */
+  .hero {
+    padding: 30px 15px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  /* Product sections */
+  .watch,
+  .mac,
+  .Airpods,
+  .macandipad {
+    padding: 25px 10px;
+  }
+
+  /* Footer adjustments for tablets and smaller desktops */
+  .footer-container {
+    flex-direction: wrap; /* Stack footer columns vertically */
+    align-items: flex-start;
+  }
+
+  .footer-column {
+    width: 100%; /* Make each column take full width */
+    margin-bottom: 20px; /* Add space between stacked columns */
+    margin: 10px 0; /* Adjust margins */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  /* Footer adjustments for mobile phones */
+  .footer {
+    padding: 20px 10px; /* Reduce padding for smaller screens */
+    }
+
+
+  .footer-column {
+    margin-bottom: 15px; /* Further reduce space between columns on very small screens */
+  }
+
+  .footer-column h4 {
+    font-size: 15px;
+  }
+
+  .footer-column p {
+    font-size: 13px;
+  }
+}
