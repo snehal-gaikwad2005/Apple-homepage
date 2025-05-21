@@ -82,7 +82,7 @@ body {
 video {
   display: block;
   margin: 20px auto;
-  width: 100%;
+  width: 80%;
   max-width: 900px;
   height: auto;
   border-radius: 12px;
@@ -90,17 +90,33 @@ video {
 }
 
 /* Product sections */
-.watch,
+.watch {
+  text-align: center;
+
+}
 .mac,
-.Airpods,
+.Airpods {
+  text-align: center;
+}
 .macandipad {
   text-align: center;
   padding: 30px 15px;
 }
 
-.watch img,
-.mac img,
-.airpods img,
+.watch img {
+  width: 500px;
+  height: 400px;
+}
+.mac img {
+  width: 800px;
+  height: 400px;
+}
+.airpods img {
+  width: 500px;
+  height: 400px;
+  display: block;
+  margin: 0 auto;
+}
 .macandipad img {
   display: block;
   margin: 0 auto;
