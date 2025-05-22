@@ -1,4 +1,4 @@
-/* Reset some default browser styles */
+ /* Reset some default browser styles */
 * {
   margin: 0;
   padding: 0;
@@ -26,21 +26,20 @@ body {
   padding: 10px 20px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   display: flex;
-  justify-content: center; /* Centers the navigation links */
+  justify-content: space-between; /* Aligns logo to left, menu to right */
   align-items: center;
 }
 
+.apple-logo {
+  height: 20px;
+  width: auto;
+}
+
 .nav-links {
-  color: black;
   list-style: none;
   display: flex; /* Ensures links are horizontal */
   align-items: center;
   gap: 15px; /* Spacing between navigation items */
-}
-
-.nav-links img {
-  height: 20px;
-  width: auto;
 }
 
 .nav-links li a {
@@ -52,13 +51,26 @@ body {
 }
 
 .nav-links li a:hover {
-  color: #ccc;
+  color: #007aff; /* Apple blue on hover */
 }
 
-/* Mobile menu button (hidden by default, not affected by this change) */
+/* Mobile menu button (Hamburger icon) */
 .menu-toggle {
-  display: none;
+  display: none; /* Hidden by default for desktop */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
   cursor: pointer;
+  z-index: 1001; /* Ensure it's above the nav links when open */
+}
+
+.menu-toggle span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Hero section */
@@ -92,7 +104,6 @@ video {
 /* Product sections */
 .watch {
   text-align: center;
-
 }
 .mac,
 .Airpods {
@@ -158,14 +169,12 @@ video {
 }
 
 .footer-column p {
-  /* Changed li to p as per your HTML */
   font-size: 14px;
   margin-bottom: 8px;
   color: #141212;
 }
 
 .footer > p {
-  /* Styling for the copyright notice */
   text-align: center;
   margin-top: 30px;
   font-size: 12px;
@@ -178,25 +187,56 @@ video {
     padding-top: 50px;
   }
 
-  /* Mobile navbar */
+  /* Mobile Navbar */
   .navbar {
-    left: 0;
     padding: 10px 15px;
-    width: 420px;
   }
 
-  /* Keep nav-links horizontal even on smaller screens */
   .nav-links {
-    flex-direction: row; /* Ensure links stay horizontal */
-    justify-content: center; /* Center them */
-    align-items: center;
-    gap: 5px; /* Adjust gap for smaller screens if needed */
-    padding: 0; /* Remove vertical padding */
+    display: none; /* Hide nav links by default on mobile */
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 50px; /* Position below the header */
+    left: 0;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    gap: 0; /* Remove gap when stacked vertically */
+    z-index: 999;
   }
 
-  .nav-links img {
-    margin-right: 0;
-    margin-bottom: 0; /* Remove bottom margin */
+  .nav-links.active {
+    display: flex; /* Show nav links when 'active' class is present */
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-links li a {
+    font-size: 16px; /* Larger font size for mobile links */
+    padding: 10px 20px;
+    display: block; /* Make links block-level for easier tapping */
+  }
+
+  .menu-toggle {
+    display: flex; /* Show hamburger icon on mobile */
+  }
+
+  /* Hamburger icon animation when active */
+  .menu-toggle.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
   }
 
   /* Hero section adjustments */
@@ -220,9 +260,17 @@ video {
     padding: 25px 10px;
   }
 
+  .watch img,
+  .mac img,
+  .airpods img,
+  .macandipad img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+
   /* Footer adjustments for tablets and smaller desktops */
   .footer-container {
-    flex-direction: wrap; /* Stack footer columns vertically */
+    flex-direction: column; /* Stack footer columns vertically */
     align-items: flex-start;
   }
 
@@ -245,8 +293,7 @@ video {
   /* Footer adjustments for mobile phones */
   .footer {
     padding: 20px 10px; /* Reduce padding for smaller screens */
-    }
-
+  }
 
   .footer-column {
     margin-bottom: 15px; /* Further reduce space between columns on very small screens */

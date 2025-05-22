@@ -162,12 +162,12 @@ img {
     border: none;
     cursor: pointer;
 }
-
 .mobile-menu-links {
     display: flex;
     flex-direction: column;
     gap: 24px;
-}
+    }
+
 
 .mobile-menu-links a {
     font-size: 18px;
