@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirPods - Apple (IN)</title>
+    <link rel="stylesheet" href="airpod.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+    <!-- Country Selector Banner -->
+    <div id="country-selector" class="country-selector">
+        <div class="container">
+            <p>Choose another country or region to see content specific to your location and shop online.</p>
+            <div class="selector-controls">
+                <div class="selected-country">
+                    <span class="check-icon">✓</span>
+                    <span>United States</span>
+                    <span class="dropdown-icon">▼</span>
+                </div>
+                <button class="continue-btn">Continue</button>
+                <button class="close-btn">×</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="container">
+            <div class="desktop-nav">
+                <a href="/" class="logo">
+                    <!-- Apple SVG Icon -->
+                    <svg height="44" viewBox="0 0 14 44" width="14" class="apple-icon">
+                        <path d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z"></path>
+                    </svg>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="/store">Store</a></li>
+                    <li><a href="/mac">Mac</a></li>
+                    <li><a href="/ipad">iPad</a></li>
+                    <li><a href="/iphone">iPhone</a></li>
+                    <li><a href="/watch">Watch</a></li>
+                    <li><a href="/airpods" class="active">AirPods</a></li>
+                    <li><a href="/tv-home">TV & Home</a></li>
+                    <li><a href="/entertainment">Entertainment</a></li>
+                    <li><a href="/accessories">Accessories</a></li>
+                    <li><a href="/support">Support</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <button aria-label="Search" class="icon-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                    <button aria-label="Shopping Bag" class="icon-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <path d="M16 10a4 4 0 0 1-8 0"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="mobile-nav">
+                <button id="menu-toggle" class="menu-toggle">
+                    <span class="menu-icon"></span>
+                </button>
+
+                <a href="/" class="logo">
+                    <svg height="44" viewBox="0 0 14 44" width="14" class="apple-icon">
+                        <path d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z"></path>
+                    </svg>
+                </a>
+
+                <div class="mobile-icons">
+                    <button aria-label="Search" class="icon-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                    <button aria-label="Shopping Bag" class="icon-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <path d="M16 10a4 4 0 0 1-8 0"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="mobile-menu-header">
+            <button id="close-menu" class="close-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <ul class="mobile-menu-links">
+            <li><a href="/store">Store</a></li>
+            <li><a href="/mac">Mac</a></li>
+            <li><a href="/ipad">iPad</a></li>
+            <li><a href="/iphone">iPhone</a></li>
+            <li><a href="/watch">Watch</a></li>
+            <li><a href="/airpods" class="active">AirPods</a></li>
+            <li><a href="/tv-home">TV & Home</a></li>
+            <li><a href="/entertainment">Entertainment</a></li>
+            <li><a href="/accessories">Accessories</a></li>
+            <li><a href="/support">Support</a></li>
+        </ul>
+    </div>
+
+    <!-- AirPods Sub-Navigation -->
+    <div class="airpods-subnav">
+        <div class="container">
+            <ul class="subnav-links">
+                <li>
+                    <a href="#airpods" class="subnav-item">
+                        <div class="subnav-icon">
+                            <img src="images/airpod.svg
+                            " alt="AirPods">
+                        </div>
+                        <span>AirPods</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#airpods-pro" class="subnav-item">
+                        <div class="subnav-icon">
+                            <img src="images/airpodpro.svg" alt="AirPods Pro">
+                        </div>
+                        <span>AirPods Pro</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#airpods-max" class="subnav-item">
+                        <div class="subnav-icon">
+                            <img src="images/max.png" alt="AirPods Max">
+                        </div>
+                        <span>AirPods Max</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#compare" class="subnav-item">
+                        <div class="subnav-icon">
+                            <img src="images/compare.png" alt="Compare">
+                        </div>
+                        <span>Compare</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#apple-music" class="subnav-item">
+                        <div class="subnav-icon">
+                            <img src="images/music.png" alt="Apple Music">
+                        </div>
+                        <span>Apple Music</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Promo Banner -->
+    <div class="promo-banner">
+        <div class="container">
+            <p>
+                Get up to 6 months of No Cost EMI* plus up to ₹4000.00 instant cashback* on AirPods with eligible cards. 
+                <a href="/shop/airpods" class="promo-link">Shop AirPods ›</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>AirPods 4</h1>
+                <p class="hero-tagline">The next evolution of sound and comfort.</p>
+                <div class="hero-pricing">
+                    <p>Starting at ₹12900.00*</p>
+                    <p>With Active Noise Cancellation ₹17900.00*</p>
+                </div>
+                <div class="hero-buttons">
+                    <a href="/airpods/learn-more" class="button button-secondary">Learn more</a>
+                    <a href="/airpods/buy" class="button button-primary">Buy</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Sections -->
+    <section class="featured-section">
+        <div class="container">
+            <div class="feature-card">
+                <div class="feature-content">
+                    <h2>AirPods Pro</h2>
+                    <p class="feature-tagline">Sound all around.</p>
+                    <p class="feature-price">₹24900.00*</p>
+                    <div class="feature-buttons">
+                        <a href="/airpods-pro/learn-more" class="button button-secondary">Learn more</a>
+                        <a href="/airpods-pro/buy" class="button button-primary">Buy</a>
+                    </div>
+                </div>
+                <div class="feature-image">
+                    <img src="images/airpodimage.jpeg" alt="AirPods Pro">
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-content">
+                    <h2>AirPods Max</h2>
+                    <p class="feature-tagline">High-fidelity audio. Redefined.</p>
+                    <p class="feature-price">₹59900.00*</p>
+                    <div class="feature-buttons">
+                        <a href="/airpods-max/learn-more" class="button button-secondary">Learn more</a>
+                        <a href="/airpods-max/buy" class="button button-primary">Buy</a>
+                    </div>
+                </div>
+                <div class="feature-image">
+                    <img src="images/airpodmaximage.webp" alt="AirPods Max">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why AirPods Section -->
+    <section class="why-airpods">
+        <div class="container">
+            <h2 class="section-title">Why AirPods</h2>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <img src="images/magicalsetup.png" alt="Magical setup">
+                    </div>
+                    <h3>Magical setup</h3>
+                    <p>Connects instantly with your Apple devices.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <img src="images/audio.png" alt="High-quality audio">
+                    </div>
+                    <h3>High-quality audio</h3>
+                    <p>Incredible sound quality for music, calls, and more.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <img src="images/siri.png" alt="Siri">
+                    </div>
+                    <h3>Siri</h3>
+                    <p>Control music, get directions, and more with "Hey Siri."</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <img src="images/audiosharing.gif" alt="Audio Sharing">
+                    </div>
+                    <h3>Audio Sharing</h3>
+                    <p>Share audio between two sets of AirPods.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compare Section -->
+    <section class="compare-section">
+        <div class="container">
+            <h2 class="section-title">Which AirPods are right for you?</h2>
+            
+            <div class="compare-grid">
+                <div class="compare-item">
+                    <div class="compare-image">
+                        <img src="images/airpodimage.jpeg" alt="AirPods">
+                    </div>
+                    <h3>AirPods</h3>
+                    <p class="compare-price">From ₹12900.00*</p>
+                    <ul class="compare-features">
+                        <li>Up to 5 hours of listening time</li>
+                        <li>Magical setup</li>
+                        <li>Personalized Spatial Audio</li>
+                        <li>Model with ANC available</li>
+                    </ul>
+                    <a href="/shop/airpods" class="button button-primary">Buy</a>
+                </div>
+
+                <div class="compare-item">
+                    <div class="compare-image">
+                        <img src="images/airpodimage.jpeg" alt="AirPods Pro">
+                    </div>
+                    <h3>AirPods Pro</h3>
+                    <p class="compare-price">₹24900.00*</p>
+                    <ul class="compare-features">
+                        <li>Up to 6 hours of listening time</li>
+                        <li>Active Noise Cancellation</li>
+                        <li>Adaptive Transparency</li>
+                        <li>Conversation Awareness</li>
+                    </ul>
+                    <a href="/shop/airpods-pro" class="button button-primary">Buy</a>
+                </div>
+
+                <div class="compare-item">
+                    <div class="compare-image">
+                        <img src="images/airpodmaximage.webp" alt="AirPods Max">
+                    </div>
+                    <h3>AirPods Max</h3>
+                    <p class="compare-price">₹59900.00*</p>
+                    <ul class="compare-features">
+                        <li>Up to 20 hours of listening time</li>
+                        <li>Over-ear design with Adaptive EQ</li>
+                        <li>Active Noise Cancellation</li>
+                        <li>Digital Crown for precise control</li>
+                    </ul>
+                    <a href="/shop/airpods-max" class="button button-primary">Buy</a>
+                </div>
+            </div>
+            
+            <div class="compare-link-container">
+                <a href="/airpods/compare" class="compare-link">Compare all AirPods models ›</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apple Music Section -->
+    <section class="apple-music-section">
+        <div class="container">
+            <div class="music-content">
+                <div class="music-logo">
+                    <img src="" alt="Apple Music">
+                </div>
+                <h2>Over 100 million songs.</h2>
+                <p>Try it free for 1 month.</p>
+                <a href="/apple-music/try-it-free" class="button button-secondary">Try it free</a>
+                <p class="music-disclaimer">Terms apply.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accessories Section -->
+    <section class="accessories-section">
+        <div class="container">
+            <h2 class="section-title">AirPods Accessories</h2>
+            
+            <div class="accessories-grid">
+                <div class="accessory-item">
+                    <div class="accessory-image">
+                        <img src="images/magsafe.jpeg" alt="AirPods Case">
+                    </div>
+                    <h3>MagSafe Charging Case</h3>
+                    <p class="accessory-price">₹6900.00*</p>
+                    <a href="/shop/accessories/charging-case" class="button button-secondary">Buy</a>
+                </div>
+                
+                <div class="accessory-item">
+                    <div class="accessory-image">
+                        <img src="images/eartrip.jpeg" alt="Ear Tips">
+                    </div>
+                    <h3>Ear Tips</h3>
+                    <p class="accessory-price">₹990.00*</p>
+                    <a href="/shop/accessories/ear-tips" class="button button-secondary">Buy</a>
+                </div>
+                
+                <div class="accessory-item">
+                    <div class="accessory-image">
+                        <img src="images/lanyard.jpeg" alt="AirPods Loop">
+                    </div>
+                    <h3>AirPods Pro Lanyard</h3>
+                    <p class="accessory-price">₹1290.00*</p>
+                    <a href="/shop/accessories/lanyard" class="button button-secondary">Buy</a>
+                </div>
+            </div>
+            
+            <div class="accessories-link-container">
+                <a href="/shop/accessories/all" class="accessories-link">Shop all AirPods accessories ›</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-disclaimer">
+                <p>*Listed pricing is Maximum Retail Price (inclusive of all taxes).</p>
+                <p>Instant cashback is available with eligible cards. Offer is limited to a maximum cashback per card as per bank's terms and conditions. EMI schemes are available on select cards only.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Shop and Learn</h4>
+                    <ul>
+                        <li><a href="/store">Store</a></li>
+                        <li><a href="/mac">Mac</a></li>
+                        <li><a href="/ipad">iPad</a></li>
+                        <li><a href="/iphone">iPhone</a></li>
+                        <li><a href="/watch">Watch</a></li>
+                        <li><a href="/airpods">AirPods</a></li>
+                        <li><a href="/tv-home">TV & Home</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="/apple-music">Apple Music</a></li>
+                        <li><a href="/apple-tv-plus">Apple TV+</a></li>
+                        <li><a href="/apple-arcade">Apple Arcade</a></li>
+                        <li><a href="/icloud">iCloud</a></li>
+                        <li><a href="/apple-one">Apple One</a></li>
+                        <li><a href="/books">Apple Books</a></li>
+                        <li><a href="/podcasts">Apple Podcasts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Apple Store</h4>
+                    <ul>
+                        <li><a href="/find-a-store">Find a Store</a></li>
+                        <li><a href="/shop/help">Shop Online</a></li>
+                        <li><a href="/today">Today at Apple</a></li>
+                        <li><a href="/financing">Financing</a></li>
+                        <li><a href="/trade-in">Apple Trade In</a></li>
+                        <li><a href="/shop/order-status">Order Status</a></li>
+                        <li><a href="/shop/help">Shopping Help</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>For Business</h4>
+                    <ul>
+                        <li><a href="/business">Apple and Business</a></li>
+                        <li><a href="/retail/business">Shop for Business</a></li>
+                    </ul>
+                    <h4>For Education</h4>
+                    <ul>
+                        <li><a href="/education">Apple and Education</a></li>
+                        <li><a href="/education/k12">Shop for K-12</a></li>
+                        <li><a href="/education/college">Shop for College</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © 2025 Apple Inc. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="/privacy">Privacy Policy</a>
+                    <a href="/legal">Terms of Use</a>
+                    <a href="/legal/sales-policy">Sales Policy</a>
+                    <a href="/legal">Legal</a>
+                    <a href="/sitemap">Site Map</a>
+                </div>
+                <div class="footer-locale">
+                    <p>India</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="airpod.js"></script>
+</body>
+</html>
