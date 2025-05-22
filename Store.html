@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Store (India)</title>
+    <link rel="stylesheet" href="Store.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-content">
+            <div class="mobile-nav">
+                <button id="menu-toggle" class="menu-toggle">
+                    <span class="menu-icon"></span>
+                </button>
+                <a href="/" class="logo">
+                    <!-- Apple SVG Icon -->
+                    <svg height="44" viewBox="0 0 14 44" width="14" class="apple-icon">
+                        <path d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z"></path>
+                    </svg>
+                </a>
+                <div class="mobile-icons">
+                    <button aria-label="Search" class="icon-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                    <button aria-label="Shopping Bag" class="icon-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <path d="M16 10a4 4 0 0 1-8 0"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="desktop-nav">
+                <a href="/" class="logo">
+                    <!-- Apple SVG Icon -->
+                    <svg height="44" viewBox="0 0 14 44" width="14" class="apple-icon">
+                        <path d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z"></path>
+                    </svg>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="/store">Store</a></li>
+                    <li><a href="/mac">Mac</a></li>
+                    <li><a href="/ipad">iPad</a></li>
+                    <li><a href="/iphone">iPhone</a></li>
+                    <li><a href="/watch">Watch</a></li>
+                    <li><a href="/airpods">AirPods</a></li>
+                    <li><a href="/tv-home">TV & Home</a></li>
+                    <li><a href="/entertainment">Entertainment</a></li>
+                    <li><a href="/accessories">Accessories</a></li>
+                    <li><a href="/support">Support</a></li>
+                </ul>
+                <div class="desktop-icons">
+                    <button aria-label="Search" class="icon-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                    <button aria-label="Shopping Bag" class="icon-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <path d="M16 10a4 4 0 0 1-8 0"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="mobile-menu-header">
+            <button id="close-menu" class="close-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <ul class="mobile-menu-links">
+            <li><a href="/store">Store</a></li>
+            <li><a href="/mac">Mac</a></li>
+            <li><a href="/ipad">iPad</a></li>
+            <li><a href="/iphone">iPhone</a></li>
+            <li><a href="/watch">Watch</a></li>
+            <li><a href="/airpods">AirPods</a></li>
+            <li><a href="/tv-home">TV & Home</a></li>
+            <li><a href="/entertainment">Entertainment</a></li>
+            <li><a href="/accessories">Accessories</a></li>
+            <li><a href="/support">Support</a></li>
+        </ul>
+    </div>
+
+    <!-- Promo Banner -->
+    <div class="promo-banner">
+        <p>
+            Get up to 12 months of No Cost EMI* plus up to ₹8000.00 instant cashback* on selected products with eligible cards.
+            <a href="/offers" class="promo-link">See offers <span class="info-icon">ⓘ</span></a>
+        </p>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Store. <span class="subtitle">The best way to buy the products you love.</span></h1>
+                </div>
+                <div class="hero-cta">
+                    <div class="cta-item">
+                        <div class="cta-icon">👤</div>
+                        <div class="cta-text">
+                            <p class="cta-title">Need shopping help?</p>
+                            <a href="/specialist" class="cta-link">Ask a Specialist <span class="chevron">›</span></a>
+                        </div>
+                    </div>
+                    <div class="cta-item">
+                        <div class="cta-icon">📍</div>
+                        <div class="cta-text">
+                            <p class="cta-title">Visit an Apple Store</p>
+                            <a href="/find-store" class="cta-link">Find one near you <span class="chevron">›</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Categories -->
+        <section class="categories-section">
+            <div class="categories-grid">
+                <a href="/mac" class="category-item">
+                    <div class="category-image">
+                        <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-mac-nav-202503?wid=400&hei=260&fmt=png-alpha&.v=M1Q3OGxnb1lBaHhqNjZ2OVRXZmx4VEpBUDFBeEhMZS9GUnNSYXdEd0hscisrUlZaSVRoWVYzU0Qra0FoTmUwNng2bitObzZwQzk4cEorV1dZdzhIazVVcFlOTkdoMWg4ZkdDS1ovMUlzcW8" alt="Mac">
+                    </div>
+                    <span class="category-name">Mac</span>
+                </a>
+                <a href="/iphone" class="category-item">
+                    <div class="category-image">
+                        <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-iphone-nav-202502_GEO_US?wid=400&hei=260&fmt=png-alpha&.v=dW5XbHI1eDVpd01qWUU4bFRtWGZXMGIwbkQ3THNNRjRsZmFuY3ZnUksrQTA2bGFaODVwaytiT1psSXc2dlhUWUwyZnhVM3hmakh4cEVIbk1pcnBIRXFpaVlBSTdOOXplUDUwZUNmQnR2OUxuakp5ZFBaaHhUOUJXVGFwbk9vT2k" alt="iPhone">
+                    </div>
+                    <span class="category-name">iPhone</span>
+                </a>
+                <a href="/ipad" class="category-item">
+                    <div class="category-image">
+                        <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-ipad-nav-202405?wid=400&hei=260&fmt=png-alpha&.v=dW5XbHI1eDVpd01qWUU4bFRtWGZXNGFLQTJVNnlNQmQrVmRBYnZYei9jckUzelNmMnRxajE0NHhmMWtLazl6eG53M0FRZHBXNTh1U1lFVEtSR2YzTm5qbE56RWRpRFNIRXZvbkd2S0l5dTg" alt="iPad">
+                    </div>
+                    <span class="category-name">iPad</span>
+                </a>
+                <a href="/apple-watch" class="category-item">
+                    <div class="category-image">
+                        <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-watch-nav-202409?wid=400&hei=260&fmt=png-alpha&.v=S0tSVzBtSkRkSFFhMm1zS1NmeWtkNDJNVmlnVytwalkvOTJ2M1BKWUREdkh5NTJ6cGtEemJOblBHR043ZjFkZzAzOVFHb3N0MkVmS01ZcFh0d1Y4R2oxdUo4aWtyK05IRkZuWjBWbW5HM00" alt="Apple Watch">
+                    </div>
+                    <span class="category-name">Apple Watch</span>
+                </a>
+                <a href="/airpods" class="category-item">
+                    <div class="category-image">
+                        <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-airpods-nav-202409?wid=400&hei=260&fmt=png-alpha&.v=Q0Z1bWFqMUpRRnp3T0Y0VWJpdk1yNlJ5eGFhR1FVd2NNNDB0VWRUSzVCUFd1aTN5QlRYNG5PRjJxc2d1RklXbVM0TjRWdzF2UjRGVEY0c3dBQVZ6VFI0R1M4eFpKRTFIclV0ZHRqakVRd1k" alt="AirPods">
+                    </div>
+                    <span class="category-name">AirPods</span>
+                </a>
+                <a href="/airtag" class="category-item">
+                    <div class="category-image">
+                        <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-airtags-nav-202108?wid=400&hei=260&fmt=png-alpha&.v=Q0Z1bWFqMUpRRnp3T0Y0VWJpdk1ydzduWDk4YUM5R1JVL2gwcEZnWWNaRFd1aTN5QlRYNG5PRjJxc2d1RklXbVM0TjRWdzF2UjRGVEY0c3dBQVZ6VFpQclc0OVE3cmhmS3FBaXd6cG8yYzg" alt="AirTag">
+                    </div>
+                    <span class="category-name">AirTag</span>
+                </a>
+                <a href="/apple-tv-4k" class="category-item">
+                    <div class="category-image">
+                        <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-appletv-nav-202210?wid=400&hei=260&fmt=png-alpha&.v=T0wvM1N3YUcxQ09qK0VNRkl1RU1BZFM5WnN0RmVZRmVXQ0FCUWJjbnJDald1aTN5QlRYNG5PRjJxc2d1RklXbVM0TjRWdzF2UjRGVEY0c3dBQVZ6VFZ3YmJrVi9SakQxWUcrYWQwVXc5VTA" alt="Apple TV 4K">
+                    </div>
+                    <span class="category-name">Apple TV 4K</span>
+                </a>
+                <a href="/homepod" class="category-item">
+                    <div class="category-image">
+                        <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-homepod-nav-202301?wid=400&hei=260&fmt=png-alpha&.v=WVcvamRucHVMMWs5SXZ3bVJ3Q2hpZGR0czFXNWdCUW14eTN2U29pLzNMcld1aTN5QlRYNG5PRjJxc2d1RklXbVM0TjRWdzF2UjRGVEY0c3dBQVZ6VFJmbWU0TjJLamxsdTltNkZVZ1RhbDA" alt="HomePod">
+                    </div>
+                    <span class="category-name">HomePod</span>
+                </a>
+                <a href="/accessories" class="category-item">
+                    <div class="category-image">
+                        <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-accessories-nav-202503?wid=400&hei=260&fmt=png-alpha&.v=QnhsNk96S0o4R1dkN2FveStNM1hwNzZGMHVrNGw2NTM5Vmk2bHZzMXQ3aUJGVHdnWkxMaklDeW9JYU5tT3FWeVBrcjVFNVdueFRVbVY3TGtiL2RjUVhQYS92MS9scmN4eTZLbFFkMHVzTVhuL2FLN3hwSUJhbzdFUHltVU1ldnQ" alt="Accessories">
+                    </div>
+                    <span class="category-name">Accessories</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Latest Products -->
+        <section class="latest-section">
+            <h2 class="latest-heading">The latest. <span class="subtitle">Take a look at what's new right now.</span></h2>
+
+            <div class="product-grid">
+                <a href="/macbook-air" class="product-card" style="background-color: #f5f5f7;">
+                    <div class="product-info">
+                        <h3 class="product-title">MacBook Air</h3>
+                        <p class="product-subtitle">Apple Intelligence¹</p>
+                        <p class="product-price">From ₹99900.00*</p>
+                    </div>
+                    <div class="product-image">
+                        <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-macbook-air-202503?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=MjhMcWJ2MGZwbXEwdnBkcUN6ZnhyOWVOMytmanI1M0ZTQWR1RjlDMWJpNXFTRjNxbmh1UnU2R29ibGdpZUFXc0prY3crUWRsN1dqVjRnMHR5S1hVbk15N0N0R0lhUGhlMG1Tdmc3RjZVQ09NTUhYNlZ6OGxKNWpBMHlTSTlldko" alt="MacBook Air">
+                    </div>
+                </a>
+
+                <a href="/iphone-16-pro" class="product-card dark-card" style="background-color: #000000;">
+                    <div class="product-info">
+                        <h3 class="product-title">iPhone 16 Pro</h3>
+                        <p class="product-subtitle">Apple Intelligence¹</p>
+                        <p class="product-price">From ₹119900.00*</p>
+                    </div>
+                    <div class="product-image">
+                        <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-iphone-16-pro-202409_GEO_US?wid=800&hei=1000&fmt=jpeg&qlt=90&.v=UzBXQnlhUWdraTNvNU1Kb3pEQlpXUHpnd0VsRWFiaWRaRHRaUXBvNTNkaTN3cldHSVhIZCtHM2xVUWV5dTAvVlU4amgyYkZNZC9iNVQ4S1VDT21ldVlKWlgzZzdyUXEzcGE2bUxYbWVvdHFROE5HdXpXTzl3cVdSci8xOTZVOXo" alt="iPhone 16 Pro">
+                    </div>
+                </a>
+
+                <a href="/ipad-air" class="product-card" style="background-color: #f5f5f7;">
+                    <div class="product-info">
+                        <h3 class="product-title">iPad Air</h3>
+                        <p class="product-subtitle">Apple Intelligence¹</p>
+                        <p class="product-price">From ₹59900.00*</p>
+                    </div>
+                    <div class="product-image">
+                        <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-ipad-air-202503?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=UzBXQnlhUWdraTNvNU1Kb3pEQlpXRFJ0OFRiWngrNGllYTMvQ1dlWDBQZjZXYXJlRUd1cTBYTnRnbTNlazIvMzRHeXB5TnVsU3R6Qjd0Y2JzbURyWEdJV2RaUklyUnViT0c4OGJXRWhUTnArYWpGdS9XeFgvbS9ITnNYOEhYaG4" alt="iPad Air">
+                    </div>
+                </a>
+
+                <a href="/apple-watch-pride-edition" class="product-card" style="background-color: #ffffff;">
+                    <div class="product-info">
+                        <h3 class="product-title">Apple Watch Pride Edition Sport Band</h3>
+                        <p class="product-subtitle">Show your stripes.</p>
+                        <p class="product-price">From ₹4500.00*</p>
+                    </div>
+                    <div class="product-image">
+                        <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-watch-pride-202505?wid=800&hei=1000&fmt=png-alpha&.v=QWhYaUFuRS9hTUliZ3N5RWVCV09vdDYvU0ZacGROckNJUjJGMTk0bnRxaHFTRjNxbmh1UnU2R29ibGdpZUFXc3V5NVU0QmM2b3hmeWJWTTVtN1o5ZnNZK25GTnpvbUY1UTI4WmI2VjkwM1YrYWpGdS9XeFgvbS9ITnNYOEhYaG4" alt="Apple Watch Pride Edition Sport Band">
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-disclaimer">
+                <p>*Instant cashback of 5% of order value is available for purchases made using Axis Bank Credit Cards and Citi Credit Cards. Cashback will be credited as per the bank's T&C. Offer is limited to a maximum cashback of ₹8000 per card for Axis Bank and Citi Credit Cards. Offer is available on select products only.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Shop and Learn</h4>
+                    <ul>
+                        <li><a href="/store">Store</a></li>
+                        <li><a href="/mac">Mac</a></li>
+                        <li><a href="/ipad">iPad</a></li>
+                        <li><a href="/iphone">iPhone</a></li>
+                        <li><a href="/watch">Watch</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="/apple-music">Apple Music</a></li>
+                        <li><a href="/apple-tv-plus">Apple TV+</a></li>
+                        <li><a href="/apple-arcade">Apple Arcade</a></li>
+                        <li><a href="/icloud">iCloud</a></li>
+                        <li><a href="/apple-one">Apple One</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Apple Store</h4>
+                    <ul>
+                        <li><a href="/find-a-store">Find a Store</a></li>
+                        <li><a href="/genius-bar">Genius Bar</a></li>
+                        <li><a href="/today-at-apple">Today at Apple</a></li>
+                        <li><a href="/apple-camp">Apple Camp</a></li>
+                        <li><a href="/apple-store-app">Apple Store App</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>For Business</h4>
+                    <ul>
+                        <li><a href="/apple-and-business">Apple and Business</a></li>
+                        <li><a href="/shop-for-business">Shop for Business</a></li>
+                    </ul>
+                    <h4>For Education</h4>
+                    <ul>
+                        <li><a href="/apple-and-education">Apple and Education</a></li>
+                        <li><a href="/shop-for-education">Shop for Education</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © 2025 Apple Inc. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="/privacy-policy">Privacy Policy</a>
+                    <a href="/terms-of-use">Terms of Use</a>
+                    <a href="/sales-policy">Sales Policy</a>
+                    <a href="/legal">Legal</a>
+                    <a href="/sitemap">Site Map</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Store.js"></script>
+</body>
+</html>
